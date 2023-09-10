@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PMN 98FX Scientific Calculator"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:padding="10dp"
+   />
+
+    <TextView
+        android:id="@+id/placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="end"
+        android:hint="0"
+        android:textColorHint="@color/purple_700"
+        android:cursorVisible="true"
+        android:layout_marginTop="10sp"
+        android:layout_marginRight="10sp"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:singleLine="true"/>
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="end"
+        android:layout_marginEnd="10sp"
+        android:textColor="@color/white"
+        android:textSize="45sp"
+        android:singleLine="true"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/clear"
+            style="@style/ActionButtonStyle"
+            android:text="Clear" />
+
+        <TextView
+            android:id="@+id/startBracket"
+            style="@style/ActionButtonStyle"
+            android:text="(" />
+
+        <TextView
+            android:id="@+id/closeBracket"
+            style="@style/ActionButtonStyle"
+            android:text=")" />
+
+        <TextView
+            android:id="@+id/actionDivide"
+            style="@style/ActionButtonStyle"
+            android:text="/" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/num7"
+            style="@style/NumberButtonStyle"
+            android:text="@string/_7" />
+
+        <TextView
+            android:id="@+id/num8"
+            style="@style/NumberButtonStyle"
+            android:text="@string/_8" />
+
+        <TextView
+            android:id="@+id/num9"
+            style="@style/NumberButtonStyle"
+            android:text="@string/_9" />
+
+        <TextView
+            android:id="@+id/actionMultiply"
+            style="@style/ActionButtonStyle"
+            android:text="@string/stash" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/num4"
+            style="@style/NumberButtonStyle"
+            android:text="4" />
+
+        <TextView
+            android:id="@+id/num5"
+            style="@style/NumberButtonStyle"
+            android:text="5" />
+
+        <TextView
+            android:id="@+id/num6"
+            style="@style/NumberButtonStyle"
+            android:text="6" />
+
+        <TextView
+            android:id="@+id/actionMinus"
+            style="@style/ActionButtonStyle"
+            android:text="-" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/num1"
+            style="@style/NumberButtonStyle"
+            android:text="1" />
+
+
+        <TextView
+            android:id="@+id/num2"
+            style="@style/NumberButtonStyle"
+            android:text="2" />
+
+
+        <TextView
+            android:id="@+id/num3"
+            style="@style/NumberButtonStyle"
+            android:text="3" />
+
+
+        <TextView
+            android:id="@+id/actionAdd"
+            style="@style/ActionButtonStyle"
+            android:text="+" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/numDot"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            style="@style/NumberButtonStyle"
+            android:text="." />
+
+
+        <TextView
+            android:id="@+id/num0"
+            style="@style/NumberButtonStyle"
+            android:text="0" />
+
+
+        <TextView
+            android:id="@+id/actionBack"
+            style="@style/NumberButtonStyle"
+            android:padding="30dp"
+            android:foregroundGravity="center"
+            app:drawableStartCompat="@drawable/backspace" />
+
+
+        <TextView
+            android:id="@+id/actionEquals"
+            style="@style/ActionButtonStyle"
+            android:text="=" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
